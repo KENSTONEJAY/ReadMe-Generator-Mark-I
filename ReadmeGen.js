@@ -60,4 +60,46 @@ inquirer.prompt([
             }
         }
     },
+    {
+        //list of license
+        type: 'list',
+        message = 'Enter licenses used',
+        name: 'License',
+        choices:['The MIT License', 'The GPL License', 'Apache license', 'GNU License', 'N/A'],
+        validate: (value) =>{
+            if (value){
+                return true
+            } else {
+                return 'Please enter a valid input'
+            }
+        }
+    },
+    {
+        type: 'input',
+        message = 'Enter Github username',
+        name: 'git',
+        // validate property to check that the user provided a value 
+        validate: (value) =>{
+            if (value){
+                return true
+            } else {
+                return 'Please enter a valid input'
+            }
+        }
+    },
+    {
+        type: 'input',
+        message = 'Enter your email',
+        name: 'email',
+        validate: (value) =>{
+            if (value){
+                return true
+            } else {
+                return 'Please enter a valid input'
+            }
+        }
+    }
+    
+]
+
     
