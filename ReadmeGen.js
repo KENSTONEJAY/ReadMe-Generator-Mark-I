@@ -101,5 +101,55 @@ inquirer.prompt([
     }
     
 ]
+).then(({
+    title,
+    installation,
+    instructions,
+    credit,
+    license,
+    git,
+    linkedIn,
+    email,
+    usage,
+    contribution
+}) => {
+    //template to be used 
+    const template = `# ${title}
+* [Installation](installation)
+* [Usage](#usage)
+* [Contribution](#contribution)
+* [Credits](#credits)
+* [License](#license)
+# Installation
+${installation}
+## Usage
+${usage}
+## Contribution
+${contribution}
+### Instructions
+${instructions}
+## Credits
+${credit}
+## License
+${license}
 
+# Contact
+* Github :${git}
+* LinkedIn :${linkedIn}
+*  E-mail :${email}`;
+// Function to create our readme using fs
+
+createNewFile(title,template);
+}
+);
+// creating the createNewFile function
+function createNewFile(fileName,templated){
+//fs
+fs.writeFile(`./${fileName.toLowerCase().split('').join('')}.md`,data,(err)=>{
+if(err){
+    console.log(err)
+}
+console.log('Your README has been generated')
+})
+}
     
