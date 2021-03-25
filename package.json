@@ -1,0 +1,24 @@
+{
+  "name": "ReadMe-Generator-Mark-I",
+  "version": "1.0.0",
+  "description": "This application is designed to help the user generate a readme file using node.js (incl. NPM)",
+  "main": "ReadmeGen.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KENSTONEJAY/ReadMe-Generator-Mark-I.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KENSTONEJAY/ReadMe-Generator-Mark-I/issues"
+  },
+  "homepage": "https://github.com/KENSTONEJAY/ReadMe-Generator-Mark-I#readme",
+  "dependencies": {
+    "inquirer": "^8.0.0"
+  },
+  "devDependencies": {}
+}
